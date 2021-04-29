@@ -1,7 +1,7 @@
 # 265459_python_project
 Python Project Repository
 
-### steps to run test file 
+# steps to run test file 
 
 ##  1.  pytest -s
 ##  2.   +
