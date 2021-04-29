@@ -17,7 +17,7 @@ def divide(x, y):
 
 def calculate():
     operation = input('''
-Please type in the math operation you would like to complete:
+Choose Your Desired Operation by typing the symbol for it :
 + for addition
 - for subtraction
 * for multiplication
@@ -35,7 +35,7 @@ Please type in the math operation you would like to complete:
         f.write(output)
         f.close()
 
-#open and read the file after the appending:
+        #open and read the file after the appending:
         f = open("out1.txt", "r")
         print(f.read())
 
@@ -43,16 +43,54 @@ Please type in the math operation you would like to complete:
         num1 = int(input('Please enter the first number: '))
         num2 = int(input('Please enter the second number: '))
         print(num1, "-", num2, "=", subtract(num1, num2))
+        
+        output = str(subtract(num1,num2) )
+        f = open("out1.txt", "w+")
+        f.write(output)
+        f.close()
+
+        #open and read the file after the appending:
+        f = open("out1.txt", "r")
+        print(f.read())
+
+
+
+
 
     elif operation == '*':
         num1 = int(input('Please enter the first number: '))
         num2 = int(input('Please enter the second number: '))
         print(num1, "*", num2, "=", multiply(num1, num2))
+        
+        output = str(multiply(num1,num2) )
+        f = open("out1.txt", "w+")
+        f.write(output)
+        f.close()
+
+        #open and read the file after the appending:
+        f = open("out1.txt", "r")
+        print(f.read())
+
+
+
 
     elif operation == '/':
         num1 = int(input('Please enter the first number: '))
         num2 = int(input('Please enter the second number: '))
         print(num1, "/", num2, "=", divide(num1, num2))
+        
+        output = str(divide(num1,num2) )
+        f = open("out1.txt", "w+")
+        f.write(output)
+        f.close()
+
+        #open and read the file after the appending:
+        f = open("out1.txt", "r")
+        print(f.read())
+
+
+
+
 
     else:
         print('You have not typed a valid operator, please run the program again.')
