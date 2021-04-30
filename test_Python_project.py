@@ -1,5 +1,5 @@
 import pytest
-from Python_project import add,subtract,divide,multiply,hypo
+from Python_project import add,subtract,divide,multiply,hypo,sine,tan,cos,radian
 
 
 
@@ -78,6 +78,28 @@ def test_hypo2():
    a=10
    b=2
    assert hypo(a,b)==4
+
+def test_sin():
+   assert sine()==34
+
+def test_tan():
+   assert tan()==0.9999999999999999
+
+def test_cos():
+   assert cos()== 0.8660254037844387
+
+def test_cos1():
+   assert cos()== 1
+
+def test_rad():
+   d=30
+   assert radian(d)==0.5235987755982988
+
+def test_rad1():
+   d=30
+   assert radian(d)==12
+
+
 
 
 
