@@ -44,16 +44,16 @@ def test_div():
    assert divide(a,b)==2
 
 def test_div1():
-   a=4
-   a=2
-   assert divide(a,b)=1
+   a=10
+   b=2
+   assert divide(a,b)==5
 
 def test_div3():
    a=10
-   a=2
-   assert divide(a,b)=5
+   b=2
+   assert divide(a,b)==5
    
 def test_div4():
    a=10
-   a=2
-   assert divide(a,b)=7  
+   b=2
+   assert divide(a,b)==7  
