@@ -27,8 +27,8 @@ Choose Your Desired Operation by typing the symbol for it :
 
 
     if operation == '+':
-        num1 = int(input('Please enter the first number: '))
-        num2 = int(input('Please enter the second number: '))
+        num1 = int(input('Enter the first number: '))
+        num2 = int(input('Enter the Second number: '))
         print(num1, "+", num2, "=", add(num1, num2))
         output = str(add(num1,num2) )
         f = open("out1.txt", "w+")
@@ -40,8 +40,8 @@ Choose Your Desired Operation by typing the symbol for it :
         print(f.read())
 
     elif operation == '-':
-        num1 = int(input('Please enter the first number: '))
-        num2 = int(input('Please enter the second number: '))
+        num1 = int(input('Enter the first number: '))
+        num2 = int(input('Enter the Second number: '))
         print(num1, "-", num2, "=", subtract(num1, num2))
         
         output = str(subtract(num1,num2) )
@@ -58,8 +58,8 @@ Choose Your Desired Operation by typing the symbol for it :
 
 
     elif operation == '*':
-        num1 = int(input('Please enter the first number: '))
-        num2 = int(input('Please enter the second number: '))
+        num1 = int(input('Enter the first number: '))
+        num2 = int(input('Enter the Second number: '))
         print(num1, "*", num2, "=", multiply(num1, num2))
         
         output = str(multiply(num1,num2) )
@@ -75,8 +75,8 @@ Choose Your Desired Operation by typing the symbol for it :
 
 
     elif operation == '/':
-        num1 = int(input('Please enter the first number: '))
-        num2 = int(input('Please enter the second number: '))
+        num1 = int(input('Enter the first number: '))
+        num2 = int(input('Enter the Second number: '))
         print(num1, "/", num2, "=", divide(num1, num2))
         
         output = str(divide(num1,num2) )
@@ -90,24 +90,23 @@ Choose Your Desired Operation by typing the symbol for it :
 
 
 
-
-
     else:
-        print('You have not typed a valid operator, please run the program again.')
+        print('OOPS!!! INVALID user input, Please restart your program.')
 
     # Add again() function to calculate() function
         again()
         
 def again():
     calc_again = input('''
-    Please type Y for YES or N for NO.
-    to continue
+    For repeating.....
+    Type Y for YES or N for NO.
+    
     ''')
 
     if calc_again.upper() == 'Y':
         calculate()
     elif calc_again.upper() == 'N':
-        print('See you later.')
+        print('Come back later.')
     else:
         again()
   #  else():
