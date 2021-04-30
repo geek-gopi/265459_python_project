@@ -15,6 +15,7 @@ def multiply(x, y):
 def divide(x, y):
     return x / y    
 
+
 def calculate():
     operation = input('''
 Choose Your Desired Operation by typing the symbol for it :
@@ -24,7 +25,6 @@ Choose Your Desired Operation by typing the symbol for it :
 / for division
 ''')
 
-    
 
     if operation == '+':
         num1 = int(input('Please enter the first number: '))
@@ -96,13 +96,13 @@ Choose Your Desired Operation by typing the symbol for it :
         print('You have not typed a valid operator, please run the program again.')
 
     # Add again() function to calculate() function
-    again()
-
+        again()
+        
 def again():
     calc_again = input('''
-Please type Y for YES or N for NO.
-to continue
-''')
+    Please type Y for YES or N for NO.
+    to continue
+    ''')
 
     if calc_again.upper() == 'Y':
         calculate()
@@ -110,5 +110,13 @@ to continue
         print('See you later.')
     else:
         again()
+  #  else():
+   # print('ds')
+     
+
+
+
+
+
 
 calculate()
