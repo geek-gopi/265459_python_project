@@ -1,5 +1,5 @@
 # 265459_python_project
-Python Project Repository
+Python Project Repository built with usage of Functions,File I/O and Built testcases for the project.
 
 # Project file
   Python_project.py
