@@ -1,4 +1,5 @@
 import pytest
+import math
 
 def add(x, y):
     return x + y
@@ -15,6 +16,11 @@ def multiply(x, y):
 def divide(x, y):
     return x / y    
 
+def hypo(x,y):
+    return math.hypot(x,y)
+
+    
+
 
 def calculate():
     operation = input('''
@@ -23,6 +29,7 @@ Choose Your Desired Operation by typing the symbol for it :
 - for subtraction
 * for multiplication
 / for division
+hypo for hypothesis
 ''')
 
 
@@ -87,7 +94,21 @@ Choose Your Desired Operation by typing the symbol for it :
         #open and read the file after the appending:
         f = open("out1.txt", "r")
         print(f.read())
+    
 
+    elif operation == 'hypo':
+        num1 = int(input('Enter the first number: '))
+        num2 = int(input('Enter the Second number: '))
+        print("hypo",num1, num2, "=", hypo(num1, num2))
+        
+        output = str(hypo(num1,num2) )
+        f = open("out1.txt", "w+")
+        f.write(output)
+        f.close()
+
+        #open and read the file after the appending:
+        f = open("out1.txt", "r")
+        print(f.read())
 
 
     else:

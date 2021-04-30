@@ -1,5 +1,5 @@
 import pytest
-from Python_project import add,subtract,divide,multiply
+from Python_project import add,subtract,divide,multiply,hypo
 
 
 
@@ -38,6 +38,11 @@ def test_mul1():
    b=3
    assert multiply(a,b)==10
 
+def test_mul2():
+   a=3
+   b=20
+   assert multiply(a,b)==60
+
 def test_div():
    a=4
    b=2
@@ -56,4 +61,24 @@ def test_div3():
 def test_div4():
    a=10
    b=2
-   assert divide(a,b)==7  
+   assert divide(a,b)==7 
+
+def test_hypo():
+   a=3
+   b=4
+   assert hypo(a,b)==5.0 
+
+def test_hypo1():
+   a=3
+   b=4
+   assert hypo(a,b)==10
+
+
+def test_hypo2():
+   a=10
+   b=2
+   assert hypo(a,b)==4
+
+
+
+
